@@ -10,7 +10,7 @@ import (
 
 
 
-var token = env.String("SLACK_BOT_AUTH_TOKEN", false, "xoxb-2116911435728-2116950912416-1NHiBDfQeL1MfGlq0OObIEma", "Slack Bot Auth Token")
+var token = env.String("SLACK_BOT_AUTH_TOKEN", false, "auth_token", "Slack Bot Auth Token")
 
 func main() {
 
@@ -56,7 +56,7 @@ func main() {
 	)
 
 	_, _, _, err = client.SendMessage(
-		"C023ESTCXNU",
+		"channel_id",
 		msg,
 	)
 	if err != nil {
