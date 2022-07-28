@@ -56,7 +56,7 @@ func main() {
 	)
 
 	_, _, _, err = client.SendMessage(
-		"channel_id",
+		"id",
 		msg,
 	)
 	if err != nil {
