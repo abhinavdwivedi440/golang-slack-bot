@@ -19,7 +19,7 @@ func main() {
 	// msg := <-c
 	
 	channelID, timestamp, err := client.PostMessage(
-		"C023ESTCXNU",
+		"id",
 		slack.MsgOptionText("Hello from bot!", false),
 	)
 	if err != nil {
